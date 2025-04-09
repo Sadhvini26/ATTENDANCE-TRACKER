@@ -9,7 +9,7 @@ const SignInScreen = () => {
   return (
     <View style={styles.container}>
       {/* Logo */}
-      <Image source={require("../../assets/images/kmit1.jpg")} style={styles.logo} />
+      {/* <Image source={require("../../assets/images/kmit1.jpg")} style={styles.logo} /> */}
 
       {/* Title */}
       <Text style={styles.title}>KMIT ANVESHA</Text>

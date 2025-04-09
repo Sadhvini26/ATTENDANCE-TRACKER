@@ -9,6 +9,7 @@ import { useNavigation } from '@react-navigation/native';
 import StudentDetails from './StudentDetails'
 import TakeAttendance from './TakeAttendance';
 import Timetable from './Timetable';
+import DisciplinaryPoints from './DisciplinaryPoints';
 const FacultyDashboard = ({ }) => {
   const navigation = useNavigation();
   const [fontsLoaded, setFontsLoaded] = useState(false);
@@ -114,10 +115,13 @@ const FacultyDashboard = ({ }) => {
     </Pressable>
           </TouchableOpacity>
           
-          <TouchableOpacity style={styles.menuItem}>
-            <FontAwesome name="exclamation-circle" size={28} color="black" />
-            <Text style={styles.menuItemText}>Disciplinary points</Text>
-          </TouchableOpacity>
+          <TouchableOpacity 
+  style={styles.menuItem}
+  onPress={() => navigation.navigate('DisciplinaryPoints')}
+>
+  <FontAwesome name="exclamation-circle" size={28} color="black" />
+  <Text style={styles.menuItemText}>Disciplinary points</Text>
+</TouchableOpacity>
         </View>
         
         {/* Row 3 */}
